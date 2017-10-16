@@ -22,4 +22,8 @@ class School
     return @roster[grade]
   end
 
+  def sort
+    @roster.sort_by {|f| f.class == Array ? f.first : f}
+  end
+
 end
