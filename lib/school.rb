@@ -23,7 +23,7 @@ class School
   end
 
   def sort
-    @roster.sort_by {|f| f.class == Array ? f.first : f}
+    @roster[name].sort_by {|f| f.class == Array ? f.first : f}
   end
 
 end
