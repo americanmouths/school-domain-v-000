@@ -27,5 +27,6 @@ class School
     sorted_values.each do |k|
     sorted_values[k]
   end
+end
 
 end
