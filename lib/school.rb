@@ -23,7 +23,10 @@ class School
   end
 
   def sort
-    @roster.sort_by {|key, value| value.class == Array ? value.sort}
+    @roster.each do |grade, student|
+      student.sort!
+    end
   end
+      
 
 end
