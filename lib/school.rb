@@ -23,9 +23,7 @@ class School
   end
 
   def sort
-    sorted_values = @roster.values.sort
-    sorted_values.each do |k|
-    sorted_values[k]
+    @roster.sort_by {|key, value| value.class == Array ? value.first : value}
   end
 end
 
